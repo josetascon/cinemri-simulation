@@ -1,0 +1,19 @@
+Video:
+  camera-view:              sagittal
+  slice:                    218
+  video-time:               20
+  frame-per-second:         4
+  reference-phase:          0
+  breathing-amplitude-type: value
+  breathing-amplitude:      1.0
+  breathing-cycle-time:     4.5
+  noise-model:              gaussian
+  noise-percentage:         0.2
+
+Segments:
+  labels-input:
+    - GTV
+    - LIVER
+  labels-output:
+    - tumor
+    - liver
