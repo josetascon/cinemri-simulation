@@ -6,7 +6,10 @@ This is a patient-specific 2D Cine-MRI simulator capable to generate a simulated
 Desing
 ------
 
-Figure [CineMR Simulator][./design/cinemr_simulation.png] illustrates the video simulation process. The process comprises two stages: breathing modeling and video synthesis. The breathing model is a pre-processing stage and uses full 3D information to consider out-of-plane motion in the 2D Cine-MRI. The video synthesis stage can be run several times changing the simulation parameters to create different variants and motion conditions. 
+The figure below illustrates the video simulation process. The process comprises two stages: breathing modeling and video synthesis. The breathing model is a pre-processing stage and uses full 3D information to consider out-of-plane motion in the 2D Cine-MRI. The video synthesis stage can be run several times changing the simulation parameters to create different variants and motion conditions.
+
+![CineMR Simulator](https://github.com/josetascon/cinemri-simulation/blob/main/design/cinemri_synthesis.png)
+
 
 Dependencies
 ------------
@@ -20,7 +23,8 @@ Python:
 * SimpleITK >= 2.0
 
 External:
-* ANTs [webpage](http://stnava.github.io/ANTs/)
+* ANTs [webpage](http://stnava.github.io/ANTs/)\
+Note: You require to have ANTs installed in your system with a working binary command 'antsRegistration'.
 
 ---
 
@@ -35,15 +39,15 @@ To run a simulation you require a set of images. A sample image folder is provid
 Citation
 --------
 
-To cite when using this toolbox, please reference, as appropriate:
-@inproceedings{tascon2021cine,
-  title={Cine-MRI simulation to evaluate tumor tracking},
-  author={Tascón-Vidarte, José D. and Wahlstedt, Isak and Jomier, Julien and Erleben, Kenny and
-  Vogelius, Ivan R. and Darkner, Sune},
-  booktitle={International Workshop on Simulation and Synthesis in Medical Imaging},
-  pages={1--10},
-  year={2021},
-  organization={Springer}
+To cite when using this toolbox, please reference, as appropriate:\
+@inproceedings{tascon2021cine,\
+  title={Cine-MRI Simulation to Evaluate Tumor Tracking},\
+  author={Tasc{\'o}n-Vidarte, Jos{\'e} D and Wahlstedt, Isak and Jomier, Julien \
+  and Erleben, Kenny and Vogelius, Ivan R and Darkner, Sune},\
+  booktitle={International Workshop on Simulation and Synthesis in Medical Imaging},\
+  pages={131--141},\
+  year={2021},\
+  organization={Springer}\
 }
 
 
